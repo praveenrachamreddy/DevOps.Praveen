@@ -62,9 +62,7 @@ output "test"{
 output "front_end"{
   value= aws_lb_listener.front_end.id
 }
-output "tomcat-sg"{
-  value= aws_security_group.tomcat-sg.id
-}
+
 output "tomcat"{
   value= aws_instance.tomcat.id
 }
