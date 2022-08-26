@@ -12,13 +12,13 @@ output "keyfile"{
   value = aws_key_pair.keyfile.id
 }
 output "pubsubnet"{
-  value= aws_subnet.pubsubnet.id
+  value= aws_subnet.pubsubnet.*.id
 }
 output "pvtsubnet"{
-  value= aws_subnet.pvtsubnet.id
+  value= aws_subnet.pvtsubnet.*.id
 }
 output "datasubnet"{
-  value= aws_subnet.datasubnet.id
+  value= aws_subnet.datasubnet.*.id
 }
 output "igw"{
   value= aws_internet_gateway.igw.id
