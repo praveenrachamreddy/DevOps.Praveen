@@ -8,3 +8,24 @@ output "bastion-sg"{
 output "bastion"{
   value = aws_instance.bastion.id
 }
+output "keyfile"{
+  value = aws_key_pair.keyfile.id
+}
+output ""{
+  value=
+}
+output ""{
+  value=
+}
+output ""{
+  value=
+}
+output ""{
+  value=
+}
+output ""{
+  value=
+}
+output ""{
+  value=
+}
