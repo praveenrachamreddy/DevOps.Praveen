@@ -39,13 +39,13 @@ output "dataroute"{
   value= aws_route_table.dataroute.id
 }
 output "pubassos"{
-  value= aws_route_table_association.pubassos.id
+  value= aws_route_table_association.pubassos.*.id
 }
 output "pvtassos"{
-  value= aws_route_table_association.pvtassos.id
+  value= aws_route_table_association.pvtassos.*.id
 }
 output "dataassos"{
-  value= aws_route_table_association.dataassos.id
+  value= aws_route_table_association.dataassos.*.id
 }
 output "alb-sg"{
   value= aws_security_group.alb-sg.id
@@ -54,7 +54,7 @@ output "alb"{
   value= aws_lb.alb.id
 }
 output "tomcat-sg"{
-  value= aws_lb_target_group.tomcat-sg.id
+  value= aws_security_group.tomcat-sg.id
 }
 output "test"{
   value= aws_lb_target_group_attachment.test.id
@@ -67,19 +67,4 @@ output "tomcat-sg"{
 }
 output "tomcat"{
   value= aws_instance.tomcat.id
-}
-output ""{
-  value=
-}
-output ""{
-  value=
-}
-output ""{
-  value=
-}
-output ""{
-  value=
-}
-output ""{
-  value=
 }
